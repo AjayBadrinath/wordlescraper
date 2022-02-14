@@ -5,6 +5,6 @@ parsed_page=BeautifulSoup(get.content,'html5lib')
 string=parsed_page.prettify()
 #x=string.find("cigar")#Get the first index of list
 #l=string.find("zymic")#get last index of list+5
-f=open("w.txt","w")
+f=open("wordle.txt","w")
 f.write(string[string.find('cigar'):string.find('zymic')+6])
 f.close()
